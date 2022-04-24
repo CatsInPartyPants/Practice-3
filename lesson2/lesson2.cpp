@@ -63,5 +63,25 @@ int main()
 	*/
 
 	//Задание 3
+	/*
+	float scale, countScale;
+	std::cout << "Вычисление расстояние между населенными пунктами.\n";
+	std::cout << "Введите исходные данные:\n";
+	std::cout << "Масштаб (количество киллометров в одном сантиметре) ->: ";
+	std::cin >> scale;
+	std::cout << "Расстояние между точками (см): ";
+	std::cin >> countScale;
+	std::cout << "Расстояние между точками: " << scale*countScale << " км." << std::endl;
+	*/
 
+	//Задание 4
+
+	int secondsFromStart;
+	int hours = 0, minutes = 0, seconds = 0;
+	std::cout << "Введите количество секунд, прошедших с 00:00 -> \n";
+	std::cin >> secondsFromStart;
+	seconds = secondsFromStart % 60;
+	minutes = secondsFromStart / 60 % 60;
+	hours = secondsFromStart / 60 / 60;
+	std::cout << "Текущее время: " << hours << ":" << minutes << ":" << seconds << std::endl;
 }
